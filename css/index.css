@@ -1,0 +1,279 @@
+body {
+   padding: 0;
+   margin: 0;
+   background-color: #6366f1;
+   font-family: "Ubuntu";
+}
+
+nav {
+   height: 10vh;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   background-color: #312e81;
+   padding: 0 1em;
+   display: flex;
+   z-index: 20;
+}
+
+.logo {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: yellow;
+}
+
+.links {
+   width: 50%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style: none;
+   margin: 0;
+}
+
+.links a {
+   color: white;
+   text-decoration: none;
+}
+
+.links a:hover {
+   text-decoration: underline;
+}
+
+.logo h1 {
+   margin: 0;
+}
+
+#intro {
+   display: flex;
+   width: 100%;
+   height: 100vh;
+   flex-direction: row;
+}
+
+.intro-left,
+.intro-right {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   margin: auto;
+   align-items: center;
+}
+
+.intro-left {
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+}
+
+.text-container {
+   max-width: 500px;
+   margin: 0 auto;
+   width: 100%;
+}
+
+.intro-left h1 {
+   color: yellow;
+   margin-bottom: 1rem;
+}
+
+.intro-left p {
+   color: white;
+}
+
+.intro-right {
+   justify-content: center;
+}
+
+.intro-right img {
+   width: 300px;
+   aspect-ratio: 1/1;
+   object-position: top;
+   object-fit: cover;
+   border-top-left-radius: 3em;
+   border-bottom-right-radius: 3em;
+   border: 1em solid white;
+}
+
+.btn-primary {
+   width: 50%;
+   background-color: yellow;
+   padding: 0.5em;
+   border-radius: 0.25em;
+   font-size: medium;
+   font-weight: bold;
+   color: #312e81;
+   border: none;
+   box-shadow: black solid 0 1px 2px;
+   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+   cursor: pointer;
+   background-color: #ffcc00;
+}
+
+#experience {
+   display: flex;
+   flex-direction: row-reverse;
+   width: 100%;
+   height: 100vh;
+}
+
+.exp-left,
+.exp-right {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.exp-right img {
+   width: 300px;
+}
+
+.exp-left {
+   color: white;
+}
+
+.exp-left h1,
+.exp-left h3 {
+   color: yellow;
+}
+
+.exp-right {
+   flex-direction: column;
+   font-size: x-large;
+   color: yellow;
+}
+
+.exp-right h1 {
+   width: 300px;
+}
+
+#certificates div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 100%;
+   flex-wrap: wrap;
+}
+
+#certificates {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#certificates img {
+   width: 30%;
+   height: 50vh;
+   object-fit: cover;
+}
+
+#certificates h1 {
+   width: 100%;
+   text-align: center;
+   font-size: xx-large;
+   color: yellow;
+}
+
+h1 {
+   font-size: 2rem;
+}
+
+h2 {
+   font-size: 1.75rem;
+}
+
+h3 {
+   font-size: 1.5rem;
+}
+
+.menu-toggle {
+   display: none;
+}
+
+
+@media (max-width: 991.98px) {
+
+   nav .logo h1 {
+      font-size: 1.5rem;
+   }
+
+   .menu-toggle {
+      display: flex;
+      width: 20%;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .logo {
+      width: 80%;
+   }
+
+   nav .links {
+      display: none;
+      flex-direction: column;
+      height: 90vh;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+      background-color: #000000bf;
+      width: 100%;
+      margin-top: 10vh;
+      right: 0;
+   }
+
+   nav .links.show {
+      display: flex;
+   }
+
+   .menu-toggle button {
+      background-color: transparent;
+      border: none;
+      color: white;
+   }
+
+   #intro {
+      flex-direction: column-reverse;
+      margin-top: 10vh;
+      height: auto;
+   }
+
+   .intro-right {
+      margin-bottom: 1rem;
+   }
+
+   #experience {
+      flex-direction: column-reverse;
+      height: auto;
+      margin-top: 10vh;
+   }
+
+   .exp-left,
+   .exp-right {
+      width: 100%;
+      padding: 1rem;
+   }
+
+   #certificates {
+      margin-top: 10vh;
+   }
+
+   #certificates div {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+      gap: 4px;
+   }
+
+   #certificates img {
+      width: 100%;
+   }
+
+}
