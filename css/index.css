@@ -172,7 +172,6 @@ nav {
 #certificates img {
    width: 30%;
    height: 50vh;
-   object-fit: cover;
 }
 
 #certificates h1 {
